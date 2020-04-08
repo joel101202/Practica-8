@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Practica 8 js</title>
+</head>
+<body>
+    <script>
+
+    //PROGRAMA 1 
+  var ALC=prompt('PROGRAMA 1, presione ok para continuar...','');
+  var N1=prompt('Ingrese el primer numero:','');
+  var N2=prompt('Ingrese el segundo numero:','');
+  var N3=prompt('Ingrese el tercer numero:','');
+  if(N1>N2)
+  {
+    document.write('El numero mayor es '+N1);
+  }
+  else
+  {
+    if(N2>N3)
+    {
+    document.write('El numero mayor es '+N2);
+    }
+  else
+  {
+    document.write('El numero mayor es '+N3)
+  }
+  }
+
+
+  //PROGRAMA 2 
+  var ALC=prompt('PROGRAMA 2, presione ok para continuar...','');
+  var N1=prompt('Ingrese un valor:','');
+  if(N1>=1)
+  {
+    document.write('El numero es un entero positivo');
+  }
+  else
+  {
+    if(N1<-1)
+    {
+    document.write('El numero es un entero negativo');
+    }
+  else
+  {
+    document.write('El numero es 0');
+  }
+  }
+
+    //PROGRAMA 3
+    var ALC=prompt('PROGRAMA 3, presione ok para continuar...','');
+  var N=prompt('Ingrese un valor entre 1 y 999:','');
+  if(N>=100)
+  {
+    document.write('El numero ingresado tiene 3 cifras');
+  }
+  else
+  {
+    if(N>=10)
+    {
+    document.write('El numero ingresado tiene 2 cifras');
+    }
+  else
+  {
+    document.write('El numero ingresado tiene tan solo 1 cifra');
+  }
+  }
+
+
+    //PROGRAMA 4
+  var ALC=prompt('PROGRAMA 4, presione ok para continuar...','');
+  var N=prompt('Nombre del postulante:','');
+  var CP=prompt('Cantidad total de preguntas:','');
+  var CRC=prompt('Cantidad de respuestas correctas:','');
+  var CDRC=CRC/CP;
+  var PORCENTAJE=CDRC*100;
+  document.write('El nombre del postulante es: '+N);
+  if(PORCENTAJE>=90)
+  {
+    document.write('<br> Su nivel calificado es Superior');
+  }
+  else
+  {
+    if(PORCENTAJE>=75 && PORCENTAJE<90)
+    {
+    document.write('<br> Su nivel calificado es Medio');
+    }
+    if(PORCENTAJE>=50 && PORCENTAJE<75)
+    {
+      document.write('<br> Su nivel calificado es Regular');
+    }
+    if(PORCENTAJE<50)
+    {
+      document.write('<br> Su calificacion es fuera de nivel');
+    }
+  }
+    </script>
+</body>
+</html>
